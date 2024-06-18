@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget android-versionCode="43001" id="com.moodle.moodlemobile" ios-CFBundleVersion="4.3.0.1" version="4.3.0" versionCode="43001" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>Moodle</name>
+    <name>Samanala eSchool</name>
     <description>Moodle official app</description>
     <author email="mobile@moodle.com" href="http://moodle.com">Moodle Mobile team</author>
     <content src="index.html" />
@@ -635,4 +635,5 @@
             </array>
         </config-file>
     </platform>
+    <allow-navigation href="https://192.168.1.186:8100" sessionid="95004ccf" />
 </widget>
