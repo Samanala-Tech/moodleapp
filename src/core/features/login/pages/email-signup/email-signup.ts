@@ -99,7 +99,7 @@ export class CoreLoginEmailSignupPage implements OnInit {
             username: ['', Validators.required],
             password: ['', Validators.required],
             email: ['', Validators.compose([Validators.required, Validators.email])],
-            email2: ['', Validators.compose([Validators.required, Validators.email])],
+//             email2: ['', Validators.compose([Validators.required, Validators.email])],
         });
 
         // Setup validation errors.
@@ -144,7 +144,7 @@ export class CoreLoginEmailSignupPage implements OnInit {
 
         // Add the name fields.
         for (const i in this.settings?.namefields) {
-            this.signupForm.addControl(this.settings?.namefields[i], this.fb.control('', Validators.required));
+//             this.signupForm.addControl(this.settings?.namefields[i], this.fb.control('', Validators.required));
         }
 
         if (this.settings?.sitepolicy) {
@@ -293,8 +293,8 @@ export class CoreLoginEmailSignupPage implements OnInit {
         const params: SignupUserWSParams = {
             username: this.signupForm.value.username.trim().toLowerCase(),
             password: this.signupForm.value.password,
-            firstname: CoreTextUtils.cleanTags(this.signupForm.value.firstname),
-            lastname: CoreTextUtils.cleanTags(this.signupForm.value.lastname),
+            firstname: 'FirstName',
+            lastname: 'LastName',
             email: this.signupForm.value.email.trim(),
             city: CoreTextUtils.cleanTags(this.signupForm.value.city),
             country: this.signupForm.value.country,

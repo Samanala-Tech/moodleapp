@@ -136,39 +136,39 @@
                         </ion-input>
                         <core-input-errors [control]="signupForm.controls.email" [errorMessages]="emailErrors"></core-input-errors>
                     </ion-item>
-                    <ion-item class="ion-text-wrap">
-                        <ion-label position="stacked">
-                            <span core-mark-required="true">{{ 'core.user.emailagain' | translate }}</span>
-                        </ion-label>
-                        <ion-input type="email" name="email2" placeholder="{{ 'core.user.emailagain' | translate }}" autocapitalize="none"
-                            formControlName="email2" autocorrect="off" [pattern]="escapeMail(signupForm.controls.email.value)">
-                        </ion-input>
-                        <core-input-errors [control]="signupForm.controls.email2" [errorMessages]="email2Errors"></core-input-errors>
-                    </ion-item>
-                    <ion-item *ngFor="let nameField of settings.namefields" class="ion-text-wrap">
-                        <ion-label position="stacked">
-                            <span core-mark-required="true">{{ 'core.user.' + nameField | translate }}</span>
-                        </ion-label>
-                        <ion-input type="text" [name]="nameField" placeholder="{{ 'core.user.' + nameField | translate }}"
-                            formControlName="{{nameField}}" autocorrect="off">
-                        </ion-input>
-                        <core-input-errors [control]="signupForm.controls[nameField]" [errorMessages]="namefieldsErrors![nameField]">
-                        </core-input-errors>
-                    </ion-item>
-                    <ion-item class="ion-text-wrap">
-                        <ion-label position="stacked">{{ 'core.user.city' | translate }}</ion-label>
-                        <ion-input type="text" name="city" placeholder="{{ 'core.user.city' | translate }}" formControlName="city"
-                            autocorrect="off">
-                        </ion-input>
-                    </ion-item>
-                    <ion-item class="ion-text-wrap">
-                        <ion-label position="stacked">{{ 'core.user.country' | translate }}</ion-label>
-                        <ion-select name="country" formControlName="country" [placeholder]="'core.login.selectacountry' | translate"
-                            [cancelText]="'core.cancel' | translate" [okText]="'core.ok' | translate">
-                            <ion-select-option value="">{{ 'core.login.selectacountry' | translate }}</ion-select-option>
-                            <ion-select-option *ngFor="let country of countries" [value]="country.code">{{country.name}}</ion-select-option>
-                        </ion-select>
-                    </ion-item>
+<!--                    <ion-item class="ion-text-wrap">-->
+<!--                        <ion-label position="stacked">-->
+<!--                            <span core-mark-required="true">{{ 'core.user.emailagain' | translate }}</span>-->
+<!--                        </ion-label>-->
+<!--                        <ion-input type="email" name="email2" placeholder="{{ 'core.user.emailagain' | translate }}" autocapitalize="none"-->
+<!--                            formControlName="email2" autocorrect="off" [pattern]="escapeMail(signupForm.controls.email.value)">-->
+<!--                        </ion-input>-->
+<!--                        <core-input-errors [control]="signupForm.controls.email2" [errorMessages]="email2Errors"></core-input-errors>-->
+<!--                    </ion-item>-->
+<!--                    <ion-item *ngFor="let nameField of settings.namefields" class="ion-text-wrap">-->
+<!--                        <ion-label position="stacked">-->
+<!--                            <span core-mark-required="true">{{ 'core.user.' + nameField | translate }}</span>-->
+<!--                        </ion-label>-->
+<!--                        <ion-input type="text" [name]="nameField" placeholder="{{ 'core.user.' + nameField | translate }}"-->
+<!--                            formControlName="{{nameField}}" autocorrect="off">-->
+<!--                        </ion-input>-->
+<!--                        <core-input-errors [control]="signupForm.controls[nameField]" [errorMessages]="namefieldsErrors![nameField]">-->
+<!--                        </core-input-errors>-->
+<!--                    </ion-item>-->
+<!--                    <ion-item class="ion-text-wrap">-->
+<!--                        <ion-label position="stacked">{{ 'core.user.city' | translate }}</ion-label>-->
+<!--                        <ion-input type="text" name="city" placeholder="{{ 'core.user.city' | translate }}" formControlName="city"-->
+<!--                            autocorrect="off">-->
+<!--                        </ion-input>-->
+<!--                    </ion-item>-->
+<!--                    <ion-item class="ion-text-wrap">-->
+<!--                        <ion-label position="stacked">{{ 'core.user.country' | translate }}</ion-label>-->
+<!--                        <ion-select name="country" formControlName="country" [placeholder]="'core.login.selectacountry' | translate"-->
+<!--                            [cancelText]="'core.cancel' | translate" [okText]="'core.ok' | translate">-->
+<!--                            <ion-select-option value="">{{ 'core.login.selectacountry' | translate }}</ion-select-option>-->
+<!--                            <ion-select-option *ngFor="let country of countries" [value]="country.code">{{country.name}}</ion-select-option>-->
+<!--                        </ion-select>-->
+<!--                    </ion-item>-->
 
                     <!-- Other categories. -->
                     <ng-container *ngFor="let category of categories">
