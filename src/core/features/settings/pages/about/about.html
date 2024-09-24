@@ -14,13 +14,7 @@
 <ion-content>
     <ion-list class="list-item-limited-width">
 
-        <ion-item class="ion-text-wrap ion-text-center core-about-deviceinfo" detail="false"
-                  onclick="window.open('https://rajithsanjaya-portfolio.vercel.app', '_blank')">
-            <p class="item-heading">Developed By : Rajith Sanjaya</p>
-        </ion-item>
-        <ion-item class="ion-text-wrap ion-text-center core-about-deviceinfo" detail="false">
-            <p class="item-heading">Owned By : Samanala Danuma</p>
-        </ion-item>
+
 
 <!--        <ion-item button class="ion-text-wrap" (click)="openPage('licenses')" [detail]="true">-->
 <!--            <ion-icon name="far-copyright" slot="start" aria-hidden="true" />-->
@@ -52,6 +46,7 @@
 <ion-footer class="ion-no-border">
     <ion-item button class="ion-text-wrap ion-text-center core-about-deviceinfo" [detail]="false" (click)="openPage('deviceinfo')">
         <ion-label>
+            <p class="item-heading">Developed By : Rajith Sanjaya</p>
             <p class="item-heading">{{ appName }} {{ versionName }}</p>
         </ion-label>
     </ion-item>
