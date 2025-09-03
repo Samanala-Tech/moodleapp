@@ -1,5 +1,5 @@
 {
-    "app_id": "com.moodle.moodlemobile",
+    "app_id": "com.samanala.eschool",
     "appname": "Moodle Mobile",
     "versioncode": 44100,
     "versionname": "4.4.1",
@@ -100,7 +100,7 @@
     "forceLoginLogo": false,
     "ioswebviewscheme": "moodleappfs",
     "appstores": {
-        "android": "com.moodle.moodlemobile",
+        "android": "com.samanala.eschool",
         "ios": "id633359593"
     },
     "wsrequestqueuelimit": 10,

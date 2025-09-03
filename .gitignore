@@ -75,3 +75,6 @@ Thumbs.db
 
 /moodle.config.*.json
 !/moodle.config.example.json
+
+google-services.json
+samanalaeschool-key.keystore
