@@ -1,6 +1,6 @@
 {
     "answer": "Answer",
-    "answersaved": "Answer saved",
+    "answersaved": "Answer saved / පිළිතුරු ලබාදිඇත",
     "cannotdeterminestatus": "Cannot determine status",
     "certainty": "Certainty",
     "complete": "Complete",
@@ -13,8 +13,8 @@
     "incorrect": "Incorrect",
     "information": "Information",
     "invalidanswer": "Incomplete answer",
-    "notanswered": "Not answered",
-    "notyetanswered": "Not yet answered",
+    "notanswered": "Not answered / පිළිතුරු දී නැත",
+    "notyetanswered": "Not yet answered / පිළිතුරු දී නැත",
     "partiallycorrect": "Partially correct",
     "questionmessage": "Question {{$a}}: {{$b}}",
     "questionno": "Question {{$a}}",

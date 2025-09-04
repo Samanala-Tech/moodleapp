@@ -87,12 +87,17 @@
         "high": 120
     },
     "customurlscheme": "moodlemobile",
-    "sites": [],
+    "sites": [
+        {
+            "url": "https://samanalaeschool.lk",
+            "name": "Moodle Demo School"
+        }
+    ],
     "multisitesdisplay": "",
     "sitefindersettings": {},
     "onlyallowlistedsites": false,
     "forcedefaultlanguage": false,
-    "privacypolicy": "https://moodle.net/moodle-app-privacy/",
+    "privacypolicy": "",
     "notificoncolor": "#f98012",
     "enableanalytics": false,
     "enableonboarding": true,
